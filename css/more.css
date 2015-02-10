@@ -1,0 +1,58 @@
+.white-text h6    { color: #fff !important; }
+.purple { color: purple !important; }
+.floater{
+    position: absolute;
+    z-index: 999 !important;
+}
+.article{
+    width: 100%;
+    margin-top: 100px !important;
+}
+.striked{ margin-top: -42px !important; }
+.systems    { width: 100%; }
+.font   { font-family: 'Raleway', sans-serif; }
+.pull-left  { float: left !important; }
+.inline { display: inline !important; }
+.inline-block   { display: inline-block !important; }
+.float-right    { float: right; }
+
+pre    { box-shadow: none !important; }
+hr    { border: 1px solid #eee; }
+
+iframe{
+    margin-top: -100px;
+    width: 150% !important;
+    height: 580px;
+    clip:rect(190px,1100px,800px,250px);
+}
+
+.icon{
+    padding-right: 1em !important;
+    min-width: 300px;
+    margin-left: 2em !important;
+    margin-bottom: -1em !important;
+}
+
+.github, .twitter, .slideshare{
+    float: left !important;
+    padding-right: 0.5em !important;
+}
+
+.twitter, .github, .slideshare  { width: 32px; }
+
+.twicon a{
+    top: .4em !important;
+    float: left !important;
+}
+.gicon a{
+    top: .5em !important;
+    float: left !important;
+}
+.slicon a{
+    top: .6em !important;
+    float: left !important;
+}
+
+h6    { font-size: .9em !important; }
+.javascript { background: none !important; }
+

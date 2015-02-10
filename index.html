@@ -1,0 +1,346 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+
+        <title>WebRTC - A Future Without SIP?</title>
+
+        <meta name="description" content="A presentation about the future of WebRTC &amp; SIP">
+        <meta name="author" content="Sacha Nacar">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+        <link rel="stylesheet" href="css/more.css">
+        <link rel="stylesheet" href="css/b2tf.css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+        <link rel="icon" type="video/x-png" href="https://www.voxbone.com/images/webrtc.png">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    <link href="plugin/title-footer/title-footer.css" type="text/css" rel="stylesheet"></head>
+
+    <body cz-shortcut-listen="true" style="transition: -webkit-transform 0.8s ease; -webkit-transition: -webkit-transform 0.8s ease;">
+
+        <div class="reveal linear center" data-transition-speed="default" data-background-transition="default">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides" style="width: 960px; height: 700px; zoom: 0.2;">
+                <!-- <footer>
+                    <img src="./images/brand.png" alt="">
+                </footer> -->
+
+                <section data-background="#000" data-background-transition="zoom" class="present" style="top: -310px; display: block;">
+                    <img src="./images/wafws.png" class="profile-pic">
+                    <aside class="notes">
+                        WebRTC vs. SIP
+                    </aside>
+                </section>
+
+                <section class="future" style="top: -350px; display: block;" hidden="">
+                    <img src="./images/sacha.png" class="profile-pic">
+                    <h3>Sacha Nacar</h3>
+                    <h6>Developer Community Manager @ Voxbone</h6>
+                    <h6>
+                        <span class="icon inline-block twicon">
+                            <img src="./images/twitter.png" class="twitter">
+                            <a href="http://www.twitter.com/sachanacar">@sachanacar</a>
+                        </span>
+                    </h6>
+                    <h6>
+                        <span class="icon inline-block slicon">
+                            <img src="./images/slideshare.png" class="slideshare">
+                            <a href="http://bit.ly/wwrs">bit.ly/wwrs</a>
+                        </span>
+                    </h6>
+                    <h6>
+                        <span class="icon inline-block slicon">
+                            <img src="./images/article.png" class="blogarticle">
+                            <a href="http://ow.ly/IPSVJ">ow.ly/IPSVJ</a>
+                        </span>
+                    </h6>
+                    <br>
+                    <aside class="notes">
+                        <ul>
+                            <li>Presentation</li>
+                            <li>Article</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section class="future" style="top: -145px; display: block;" hidden="">
+                    <h2>
+                        VOXBONE SIMPLIFIES <span class="purple">COMMUNICATIONS</span>
+                    </h2>
+                    <h4>
+                        By bringing local <span class="purple">voice</span> services to the <span class="purple">cloud</span>.
+                    </h4>
+                    <aside class="notes">
+                        <ul>
+                            <li>Sell local phone numbers Worldwide</li>
+                            <li>SIP endpoint</li>
+                            <li>Calls routed Private backbone</li>
+                            <li>WebRTC-SIP SDK</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section class="future" style="top: -292.5px; display: block;" hidden="">
+                    <h3>Preface, Butterfly Effect and <span class="purple">Bike-shedding</span></h3>
+                    <br>
+                    <div class="fragment current-visible floater article" data-fragment-index="0">
+                    <a href="http://www.nojitter.com/post/240169322/will-webrtc-replace-sip" class="inline">Will WebRTC Replace SIP?</a>
+                    <p class="inline">By Andrew Prokop</p>
+                    </div>
+                    <div class="fragment roll-in" data-fragment-index="1">
+                    <img src="./images/butterfly.png" width="300" class="inline">
+                    <img src="./images/ampersand.png" width="300" class="inline">
+                    <img src="./images/bikeshed.png" width="300" class="inline">
+                    </div>
+                        <aside class="notes">
+                        <ul>
+                            <li>Why this title? Article</li>
+                            <li>Does it really come down to WebRTC vs. SIP?</li>
+                            <li>NOT EXHAUSTIVE!</li>
+                            <li>net neutrality, data privacy, Internet of Things</li>
+                            <li>BikeShedding, parkinson's law of triviality</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section class="future" style="top: -251.5px; display: none;" hidden="">
+                    <h3>Is <span class="purple"> WebRTC </span> a Drink I Can <span class="purple">SIP?</span></h3>
+                    <br>
+                    <img src="./images/webrtsip.png" width="300" class="inline">
+                    <aside class="notes">
+                        <ul>
+                            <li>Why this title? Article</li>
+                            <li>If first time you hear, I HAVE GOODIES at the end - FIND A BETTER PUN</li>
+                            <li>Accronym - WebRTC - API, Browser-to-Browser, no plugin </li>
+                            <li>Session Initiation Protocol, text-based protocol in Internet telephony (VoIP) for signaling and controlling multimedia sessions.</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section class="future" style="top: -103px; display: none;" hidden="">
+                    <div id="2017">
+                        <h2 class="fragment floater systems current-visible" data-fragment-index="0"><span> WebRTC vs. SIP?</span></h2>
+                        <br>
+                        <h2 class="fragment floater systems striked" data-fragment-index="1"><span class="strike"><strike> WebRTC vs. SIP?</strike></span></h2>
+                        <br><br>
+                        <h3 class="fragment floater systems current-visible voip" data-fragment-index="2"><span class="purple"> SIP vs. Protocol X</span></h3>
+                        <h3 class="fragment floater systems current-visible pstn" data-fragment-index="3"><span class="purple"> Browser vs. PSTN</span></h3>
+                        <aside class="notes">
+                        <ul>
+                            <li>SIP and WebRTC - Similar use cased - different in function</li>
+                            <li>Put it this way: SIP doesn't need WebRTC, WebRTC doesn't need SIP - but needs a signalling protocol</li>
+                            <li>Two different battles</li>
+                        </ul>
+                    </aside>
+                    </div>
+                </section>
+                <section class="future" style="top: -156px; display: none;" hidden="">
+                    <h3>Battle 1:</h3>
+                    <h3>Will a signaling system prevail over SIP?</h3>
+                    <br>
+                    <h3 class="fragment floater systems current-visible purple" data-fragment-index="0">SIP Over WebSockets</h3>
+                    <h3 class="fragment floater systems current-visible purple" data-fragment-index="1">JSON Over WebSockets</h3>
+                    <h3 class="fragment floater systems current-visible purple" data-fragment-index="2">XMPP/Jingle</h3>
+                    <h3 class="fragment floater systems current-visible purple" data-fragment-index="3">Data Channel</h3>
+                    <h3 class="fragment floater systems current-visible purple" data-fragment-index="4">Maybe Not</h3>
+                    <aside class="notes">
+                        <ul>
+                            <li>WebRTC work in progress - no protocol specified signaling</li>
+                            <li>Gap vs. Opportunity - heated debate</li>
+                            <li>Signaling/signalling</li>
+                            <br>
+                            <li>SIP OVER WEBSOCKETS</li>
+                            <br>
+                            <li>standard in VoIP</li>
+                            <li>convenient semantics for voip</li>
+                            <li>not invented with WebRTC in mind - need custom stack or gateway</li>
+                            <li>Carriers make infrastructures accessible over Websockets</li>
+                            <li>Open source encoding: JSSIP, sipML5</li>
+                            <li>SIP made more accessible to the web</li>
+                            <br>
+                            <li>JSON OVER WEBSOCKETS</li>
+                            <br>
+                            <li>subset of JavaScript - natively readable by web browsers</li>
+                            <li>most intuitive, no processing or encoding</li>
+                            <li>needs custom stack for external infrastructures (legacy telephony)</li>
+                            <li>community - 3rd party frameworks (PubNub, Firebase)</li>
+                            <li>Matrix.org - federating JSON signalling</li>
+                            <br>
+                            <li>XMPP, Data Channel</li>
+                            <br>
+                            <li>Why important? Standardization means locking and outcasting</li>
+                            <li>Ease of integration + Support of community</li>
+                            <li>Do we HAVE to standardize?</li>
+                            <li>Decouplig developers vs. telcos</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section class="future" style="top: -210.5px; display: none;" hidden="">
+                        <h3>Battle 2: The Browser vs. The PSTN</h3>
+                        <br>
+                        <div>
+                        <img src="./images/car1.jpg" width="300" class="inline">
+                        <img src="./images/versus.png" width="200" class="inline">
+                        <img src="./images/car2.jpg" width="300" class="inline">
+                        </div>
+                        <aside class="notes">
+                        <ul>
+                            <li>Standardization isnt onyl battle</li>
+                            <li>WebRTC can change way we communicate - eclipse PSTN</li>
+                            <li>Both future will depend on factors</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section class="stack future" style="top: 0px; display: none;" data-previous-indexv="0" hidden="">
+                    <section style="top: -289px; display: none;" class="">
+                        <h3>WebRTC Standardization</h3>
+                        <img src="./images/bttf1.jpg">
+                    </section>
+                    <section class="future" style="top: -143.5px; display: none;" hidden="">
+                        <img src="./images/google.png" width="300" class="inline">
+                        <img src="./images/versus.png" width="300" class="inline">
+                        <img src="./images/cisco.png" width="300" class="inline">
+                    </section>
+                    <section class="future" style="top: -144.5px; display: none;" hidden="">
+                        <img src="./images/browsers.png">
+                    </section>
+                    <aside class="notes">
+                        <ul>
+                            <li>Signaling standardization is not only one</li>
+                            <li>DOWN</li>
+                            <li>Video Codec fierce war- VPn (google) vs. H26n (cisco)</li>
+                            <li>DOWN</li>
+                            <li>Browser acceptance of WebRTC</li>
+                            <li>Overall interoperability will define whether better to use the phone or browser</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section class="future" style="top: -289px; display: none;" hidden="">
+                    <h3>WebRTC Going Mobile</h3>
+                    <br>
+                    <img src="./images/bttf3.jpg">
+                    <aside class="notes">
+                        <ul>
+                            <li>Dial-tone to smartphone (computer)</li>
+                            <li>WebRTC's future = what communicating will become (wearbles, IoT)</li>
+                            <li>SPEED (LTE) + Low Cost Data plans</li>
+                            <li>Carriers will be at center of WebRTC vs. PSTN battle</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section class="future" style="top: -297.5px; display: none;" hidden="">
+                    <h3>Identity Management</h3>
+                    <br>
+                    <img src="./images/bttf2.jpg" width="550px">
+                    <aside class="notes">
+                        <ul>
+                            <li>Dial-tone to smartphone (computer)</li>
+                            <li>WebRTC's future = what communicating will become (wearbles, IoT)</li>
+                            <li>SPEED (LTE) + Low Cost Data plans</li>
+                            <li>Carriers will be at center of WebRTC vs. PSTN battle</li>
+                        </ul>
+                    </aside>
+                </section>
+                <!-- <section>
+                    <h3>Demographics and Communications</h3>
+                    <br>
+                    <img src="./images/bttf3.jpg">
+                </section> -->
+                <section class="future" style="top: -270px; display: block;" hidden="">
+                    <h3>Conclusions</h3>
+                    <img src="./images/conclusions.jpg">
+                    <aside class="notes">
+                        <ul>
+                            <li>Many other factors</li>
+                            <li>Put it this way: SIP doesn't need WebRTC, WebRTC doesn't need SIP - but needs a signalling protocol</li>
+                            <li>Two different battles</li>
+                        </ul>
+                    </aside>
+
+                </section>
+                <section class="future" style="top: -255px; display: block;" hidden="">
+                    <h3>Thanks to:</h3>
+                    <h4>Dan Burnett</h4>
+                    <h4>Victor Pascual</h4>
+                    <h4>Andrew Prokop</h4>
+                    <h4>Torrey Searle</h4>
+                    <h4>Vincent Morsiani</h4>
+                    <h4>Robert Zemeckis</h4>
+                    <!-- <ul class="thanks inline">
+                    <li class="circular dburnett"><a href="https://twitter.com/danielcburnett">Dan Burnett</a></li>
+                    <li class="circular vpascual"><a href="https://twitter.com/victorpascual">Victor Pascual</a></li>
+                    <li class="circular aprokop"><a href="https://twitter.com/ajprokop">Andrew Prokop</a></li>
+                    </ul>
+                    <ul class="thanks2 inline">
+                    <li class="circular tsearle"><a href="https://twitter.com/tsearle">Torrey Searle</a></li>
+                    <li class="circular vmorsiani"><a href="https://github.com/vmorsiani">Vincent Morisiani</a></li>
+                    <li class="circular rzemeckis"><a href="http://www.imdb.com/name/nm0000709/">Robert Zemeckis</a></li>
+                    </ul> -->
+
+
+                </section>
+                <section data-background="./images/tobecontinued.jpg" class="future" style="top: -40px; display: block;" hidden="">
+                </section>
+            </div>
+        <div class="backgrounds"><div class="slide-background present" data-background-hash="#000nullnullnullnullnullzoom" data-background-transition="zoom" style="background: rgb(0, 0, 0);"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"><div class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future" data-background-hash="./images/tobecontinued.jpgnullnullnullnullnullnull" style="background-image: url(http://localhost:8000/images/tobecontinued.jpg);"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="slide-number"></div><div class="state-background"></div><div class="pause-overlay"></div></div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+                  leap: {
+                        naturalSwipe   : true,    // Invert swipe gestures
+                        pointerOpacity : 0.0,      // Set pointer opacity to 0.5
+                        pointerColor   : '#d80000' // Red pointer
+                    },
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize('WebRTC - A Future Without SIP?', 'rgba(0,0,0,0.05)'); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/leap/leap.js', async: true }
+
+                ]
+            });
+
+        </script><script type="text/javascript" src="plugin/title-footer/title-footer.js"></script><script type="text/javascript" src="plugin/highlight/highlight.js"></script><script type="text/javascript" src="plugin/zoom-js/zoom.js"></script><script type="text/javascript" src="plugin/notes/notes.js"></script><script type="text/javascript" src="plugin/leap/leap.js"></script>
+
+
+
+<div id="leap" style="position: absolute; visibility: hidden; z-index: 50; opacity: 0; background-color: rgb(216, 0, 0);"></div></body></html>

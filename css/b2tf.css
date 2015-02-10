@@ -1,0 +1,97 @@
+
+@font-face {
+  font-family: 'BTTF';
+  src: url('../fonts/BTTF.ttf') format("truetype");
+}
+
+.blue-border {
+  -webkit-text-stroke-color: #00F;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 0 0 5px #00F;
+}
+
+.blue-border-thin {
+  -webkit-text-stroke-color: 00F;
+  -webkit-text-stroke-width: 0.5px;
+  text-shadow: 0 0 1px #00F;
+}
+
+.bttf {
+  font-family: 'BTTF' !important;
+  line-height: 100%;
+}
+
+.large {
+    font-size: 500px;
+}
+.second{
+  margin-top: 100px;
+}
+.over > :first-child {
+  color: #F00;
+  -webkit-mask-image: -webkit-gradient(linear, left top,
+    left bottom, from(rgba(1,0,1,1)), to(rgba(0,1,0,0)));
+}
+
+.over > :last-child {
+  color: #F00;
+  -webkit-mask-image: -webkit-gradient(linear, left top,
+    left bottom, from(rgba(1,0,1,0)), to(rgba(0,1,0,1)));
+}
+
+.under {
+  color: #FF0;
+}
+
+
+.under, .over {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.container {
+  -webkit-perspective: 500;
+  -moz-transform: rotate(-10deg) skew(-18deg, 0deg);
+
+}
+
+.container > div {
+  overflow: visible;
+  -webkit-transform: rotateY(15deg);
+
+}
+
+.explanation {
+    color: #CCF;
+    font-family: tahoma;
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.explanation a {
+  color: #00F;
+}
+
+.explanation a:visited {
+  color: #00F;
+}
+
+.explanation a:hover {
+  color: #FFF;
+}
+
+
+.note {
+    position: absolute;
+    bottom:40px;
+}
+
+.note .ln a {
+    color: #800;
+    text-decoration: none;
+}
+
+
+
