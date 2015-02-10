@@ -33,12 +33,12 @@ iframe{
     margin-bottom: -1em !important;
 }
 
-.github, .twitter, .slideshare{
+.github, .twitter, .slideshare, .blogarticle{
     float: left !important;
     padding-right: 0.5em !important;
 }
 
-.twitter, .github, .slideshare  { width: 32px; }
+.twitter, .github, .slideshare, .blogarticle  { width: 32px; }
 
 .twicon a{
     top: .4em !important;
@@ -50,6 +50,10 @@ iframe{
 }
 .slicon a{
     top: .6em !important;
+    float: left !important;
+}
+.blogarticle a{
+    top: .7em !important;
     float: left !important;
 }
 
