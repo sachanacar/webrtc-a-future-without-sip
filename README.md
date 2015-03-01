@@ -1,6 +1,5 @@
-#### Presentation source code for WOWRTC Meetup San Francisco 11/06/14
+#### Presentation source code for DeveloperWeek #WebRTC
 
-* [Check out the event](http://www.eventbrite.com/e/developing-next-generation-telecom-apps-with-webrtc-tickets-13722537479?aff=eorg)
-* [Presentation](http://sachanacar.github.io/wowrtc)
-* [Live Stream](http://www.ustream.tv/channel/2600hz)
-* [Recording](http://www.ustream.tv/channel/2600hz)
+* [Check out the event](http://developerweek.com/)
+* [Presentation](http://sachanacar.github.io/webrtc-a-future-without-sip/#/)
+* [Article](https://www.linkedin.com/pulse/webrtc-future-without-sip-sacha-nacar)
